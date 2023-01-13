@@ -1,0 +1,576 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
+
+:root {
+    --color:#34B0BE;
+    --color:#D1CECA;
+    --color:#242635;
+    --color:#FFFFFF;
+    /* --color-primary: rgb(220, 53, 69); */
+    --color: #090b1e;
+    --color-primary-shadow: rgb(220, 53, 69, 0.15);
+  } 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin: top 50px;
+    scroll-margin-top: 50px;
+    font-family: Montserrat, sans-serif;
+  }
+
+
+
+      /* Esto es el Menu Hamburguesa */
+
+
+  ul { 
+    list-style: none;
+  }
+
+  a { 
+    text-decoration: none;
+    color: inherit;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  Body {
+    background-color: #090b1e;
+    
+  }
+
+  .about {
+    align-items: center;
+  }
+
+  .bx {
+    font-size: 2rem;
+  }
+
+  #home {
+    padding-top: 50px;
+  }
+
+  .navbar {
+    background-color: transparent;
+    height: 50px;
+
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .navbar h3 {
+    color: #34B0BE;
+    
+  }
+
+  .menu{ 
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+  }
+
+  .bx-menu {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .bx-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+  .menu {
+        background-color: rgb(32, 233, 5);
+        position: fixed;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        min-height: calc(100vh - 50px);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+
+        margin-right: -200%;
+
+        transition: margin-right 0.5s;
+    }   
+
+.menu_show {
+        margin-right: 0;
+    }
+
+    }
+
+  
+.home {
+  background-color: #242635;
+  height: 100%;
+  width: 50%;
+  border-radius: 100%;
+  @media min-width: 1200px {
+    .imagen__mobile;
+  }
+  }
+
+.home__photo {
+  display: flex;
+  align-items: center;
+  }
+
+.abouts {
+  height: 100%;
+  align-items: center;
+  z-index: auto;
+  }
+
+.about {
+  align-items: center;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.about__photo {
+  background-color: #242635;
+  width: 300px;
+  height: 43+0px;
+  border: 2px;   
+  border-radius: 10rem;
+  align-self: center;
+  
+
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem ;
+
+  } 
+
+
+      /* Esto es Laboral */
+
+.about__laboral p {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  } 
+
+.about__laboral h1 {
+  color: #34B0BE;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+  }
+
+.about__subtitles h3 {
+  color: #FFFFFF;
+  text-align: center;
+  }
+
+.about__laboral h5 {
+  text-align: center;
+  color: #FFFFFF;
+  } 
+
+.about__laboral span {
+  color: #34B0BE;
+  } 
+
+      /* Logos de Laboral */
+
+
+.about__logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  }
+
+.about__logo__item {
+  background-color: #D1CECA;
+  padding: 0.5rem;
+  }
+  
+.centerPerfect {
+  border-radius: 100%;
+  display: flex;
+  } 
+
+
+        /* Redes sociales */
+
+button {
+  border-radius: 2rem;
+  display: inline-block;
+  }
+   
+.btn {
+  padding: 15px 5px 15px;
+  border-radius: 0;
+  font-weight: bold;
+  display: inline-block;
+  }
+
+
+.about__social__buttons button:nth-child(1) {
+  background-color: #FFFFFF;
+  padding: 10 10 10;
+  }
+
+.about__social__buttons button:nth-child(2) {
+  background-color: #FFFFFF;
+  padding: 10 10 10;
+  }
+
+.about__social__buttons button:nth-child(3) {
+  background-color: #FFFFFF;
+  padding: 10 10 10;
+  }
+
+
+
+       /* acerca de mi  */
+
+
+.about__title2 h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #34B0BE;
+  }
+
+.about__title2 p {
+  color: #D1CECA;
+  justify-content: center;
+  } 
+
+
+      /* servicios */
+
+.about__title3 h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 3%;
+  color: #34B0BE;
+  }
+.about__iconos {
+  display: flex;
+  border-radius: 1rem;
+  gap: 1rem;
+  justify-content: center;
+  }
+
+.about__icono-pen{
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-radius: 0.3rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 200;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  }
+
+.about__icono-speak {
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-radius: 0.3rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 200;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  }
+
+.about__icono-sear {
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-radius: 0.3rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 200;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  }
+
+.about__icono-pen span {
+  color: #090b1e;
+  font-size: 20px; 
+  }
+
+.about__icono-pen {
+  color:#d3d4d9;
+  }
+
+.about__icono-speak span {
+  color: #090b1e;
+  font-size: 20px; 
+  }
+
+.about__icono-speak {
+  color:#d3d4d9;
+  }
+
+.about__icono-sear span {
+  color: #090b1e;
+  font-size: 20px; 
+  }
+
+.about__icono-sear {
+  color:#d3d4d9;
+  }
+
+
+        /* mis habilidades */
+
+.navbar {
+  background-color: red;
+  height: 50px;
+
+   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  }
+
+.menu1 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem;
+  
+  } 
+
+.cards__word {
+    text-align: center;
+    padding: 3%;
+  }
+  
+  .cajon__tittle h2 {
+    font-size: 1.6rem;
+    color: #34B0BE; 
+  }
+  
+.cajon {
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg,red);
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+.cajon *{
+      font-family: 'Montserrat', sans-serif;
+      color: #FFFFFF;
+      font-weight: 500;
+  }
+  
+h2 {
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+  }
+  
+.skills:not(:last-child) {
+      margin-bottom: 30px;
+  }
+  
+.detalles {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+  }
+  
+.detalles span {
+      color: #34B0BE;  
+  }
+  
+.menu1 {
+      position: relative;
+      border: 1px solid #34B0BE ;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+  }
+  
+.menu1 div {
+      position: relative;
+      width: 0;
+      height: 8px;
+      border-radius: 10px;
+      background-color: #34B0BE;
+  } 
+  
+       /* animacion   */
+  
+#Marketing-menu {
+      animation: Marketing-barra 2s forwards;
+  }
+  
+#Marketing-menu {
+    animation: UI-Desing-barra 2s forwards;
+
+  }
+
+@keyframes Marketing-barra {
+      100% {
+          width: 95%;
+      }
+  }
+  
+#UI-Desing-menu {
+      animation: UI-Desing-barra 2s forwards;
+  
+  }
+  
+@keyframes UI-Desing-barra {
+      100% {
+      width: 95%;
+    }
+  }
+  
+#UX-Research-menu {
+      animation: UX-Research-barra 2s forwards;
+  
+  }
+  
+@keyframes UX-Research-barra {
+      100% {
+      width: 80%;
+    }
+  }
+  
+      /* mi portafolio */
+
+.about__title4 {
+  text-align: center;
+  padding: 3%;
+  }
+
+.about__title4 h2 {
+  font-size: 1.6rem;
+  color: #34B0BE   
+  }
+
+.about__folios {
+  display: flex;
+  gap: 2rem;
+  } 
+
+
+      /* contacto */
+
+.footer {
+  display: grid;
+
+  }
+
+
+.footer__title5 {
+  text-align: center;
+  padding: 3%;
+  }
+
+.footer__phonee-img {
+  text-align: center;
+  color: #34B0BE;
+  width: 50px;
+  height: 50px;
+  }
+
+.footer__phonee {
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 200;
+  padding: 2rem;
+  }
+
+.footer__phonee-img {
+  font-size: 3rem;
+  font-weight: bold;
+  }
+
+.footer__email {
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: center;
+
+  font-weight: 200;
+  padding: 1rem;
+  gap: 1.5rem;
+  }
+
+@media (min-width: 400) {
+  .imagen__mobile {
+    display: flex;
+  }
+@media (max-width: 600) {
+    .imagen__desktop {
+      display: none;
+  }}
+
+.about__photo {
+    display: flex;
+    justify-content: center;
+    background-color: #242635;
+    border-radius: 50vh;
+  }
+
+.about {
+    max-width: 669px;
+    max-height: 699px;
+  }}
+
+@media (min-width:800px) {
+  .imagen__mobile {
+    display: block;
+    }
+  .imagen__desktop {
+    display: none;
+    }
+.home_header {
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+}}
